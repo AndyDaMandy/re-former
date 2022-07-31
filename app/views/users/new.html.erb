@@ -1,12 +1,4 @@
 <h1>Hello world!</h1>
 <p>This is the new html page</p>
 <p>Form</p>
-<%= form_with model: @user do |form| %>
-    <%= form.label :username, "Username"%>
-    <%= form.text_field :username %>  
-    <%= form.label :password, "Password"%> 
-    <%= form.text_field :password %>
-    <%= form.label :email, "Email Address"%>
-    <%= form.text_field :email %>
-    <%= form.submit %>
-<% end %>
+<%= render "form", user: @user %>
